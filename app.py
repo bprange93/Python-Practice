@@ -11,3 +11,7 @@ Lines
 """
 # python is a dynamic language which means variables are declared at run time not compile time.
 # C# is a static language since the variables need to be declared before running.
+
+age: int = 20
+age = "Python"
+print(age)
