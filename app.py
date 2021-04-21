@@ -1,14 +1,15 @@
 # Short cut to run code Ctrl Alt n.
-course = "      Python Programming"
-print(course.upper())
-print(course.lower())
-# title used to upper case first letter in every word.
-print(course.title())
+x = 10
+# binary number. 0b10 is the binary number for 2.
+x = 0b10
+# this prints the number as a binary number when you preface it with bin.
+print(bin(x))
+# hexadecimal number. this one equals 300
+x = 0x12c
+# to print it as a hexidecimal number when using it use hex()
+print(hex(x))
 
-print(course.strip())
+# complex numbers (a + bi) Really won't ever be used.
 
-print(course.find("Pro"))
-print(course.replace("P", "-"))
-
-print("Programming" in course)
-print("Programming" not in course)
+x = 1 + 2j
+print(x)
