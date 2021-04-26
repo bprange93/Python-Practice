@@ -1,11 +1,10 @@
-# Logical operators ( and, or, not)
-high_income = False
-good_credit = True
-student = False
+# Chain Comparison operators
 
-# Using and both conditions need to be true
-# using the or operator only one of the conditions needs to be true
-if (high_income or good_credit) and not student:
+# age should be between 18 and 65
+
+age = 22
+if age >= 18 and age < 65:
     print("Eligible")
-else:
-    print("Not Eligible")
+# This line does the same as teh line above.
+# This line is cleaner and this is how we chain comparison operators.
+if 18 <= age < 65:
