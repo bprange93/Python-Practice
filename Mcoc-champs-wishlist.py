@@ -46,3 +46,12 @@ sixStarBestPull = ["Void", "Luke Cage", "She-Hulk", "Red Hulk", "Crossbones", "F
                    "Tigra", "Hit-Monkey", "Guardian", "Sasquatch", "Dragon Man", "Professor X", "Apocalypse", "Cosmic Ghost Rider",
                    "Immortal Hulk", "Immortal Abomination", "DDHK", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter",
                    "Sivler Centurion"]
+
+starLevel = input("What star level are you spinning?")
+champLandedOn = input("Enter champion you landed on: ")
+
+if starLevel is "5":
+    champLandedOn in fiveStarBestPull
+    print("Great pull Congrats!")
+else:
+    print("Darn better luck next time!")
