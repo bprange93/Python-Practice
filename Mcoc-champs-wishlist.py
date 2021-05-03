@@ -26,4 +26,12 @@ champList = ["Storm", "Juggernaut", "Hulk", "Thor", "Rhino", "Hawkeye", "Drax", 
              "Dragon Man", "Air-Walker", "White Mags", "Professor X", "Apocalypse", "Cosmic Ghost Rider",
              "Red Goblin", "Immortal Hulk", "Immortal Abomination", "DDHK", "Scarlet Witch", "Spider-Ham",
              "Jubilee", "Stryfe", "Psycho-Man", "Super-Skrull", "Mangog", "Odin", "Jabari Panter", "Sivler Centurion"]
-print(champList)
+
+
+fiveStarBestPull = ["Red Hulk", "Crossbones", "Quake", "Ghost Rider", "Hyperion", "Iceman", "Dormammu", "Archangel",
+                    "Starky Spidey", "Vulture", "Angela", "Medusa", "Kingpin", "Hulk Rags", "Magneto", "Magik", "Blade",
+                    "Black Panter OG", "Killmonger", "Star-Lord", "Corvus Glaive", "Wolverine Weapon X", "Omega Red",
+                    "Venom the Duck", "Venom", "Human Torch", "Nick Fury", "Havok", "Namor", "Stealthy Spidey", "Warlock",
+                    "Emma Frost", "Black Widow Claire Voyant", "Guillotine 2099", "Silver Surfer", "Sorcerer Supreme",
+                    "Black Widow Deadly Origin", "Tigra", "Hit-Monkey", "Guardian", "Professor X", "Apocalypse",
+                    "Cosmic Ghost Rider", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter", "Sivler Centurion"]
