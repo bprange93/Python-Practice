@@ -35,3 +35,14 @@ fiveStarBestPull = ["Red Hulk", "Crossbones", "Quake", "Ghost Rider", "Hyperion"
                     "Emma Frost", "Black Widow Claire Voyant", "Guillotine 2099", "Silver Surfer", "Sorcerer Supreme",
                     "Black Widow Deadly Origin", "Tigra", "Hit-Monkey", "Guardian", "Professor X", "Apocalypse",
                     "Cosmic Ghost Rider", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter", "Sivler Centurion"]
+
+sixStarBestPull = ["Void", "Luke Cage", "She-Hulk", "Red Hulk", "Crossbones", "Falcon", "Howard the Duck", "Iceman", "Archangel",
+                   "Vulture", "Angela", "Morningstar", "Kingpin", "Hela", "Hulk Rags", "Sabretooth", "Cap Beardo", "Colossus",
+                   "Wolverine", "Magneto", "Black Panter OG", "Killmonger", "Star-Lord", "Ghost", "Corvus Glaive", "Proxima Midnight",
+                   "Wolverine Weapon X", "Omega Red", "Venom the Duck", "Symbiote Supreme", "Aegon", "Thing", "CMM", "Venom",
+                   "Cull Obsidian", "Human Torch", "Nick Fury", "Havok", "Namor", "Stealthy Spidey", "Sunspot", "Warlock",
+                   "Emma Frost", "Black Widow Claire Voyant", "Doctor Doom", "Elsa Bloodstone", "Mister Fantastic", "Guillotine 2099",
+                   "Silver Surfer", "Mojo", "Mole Man", "Terrax", "Sorcerer Supreme", "Red Guardian", "Black Widow Deadly Origin",
+                   "Tigra", "Hit-Monkey", "Guardian", "Sasquatch", "Dragon Man", "Professor X", "Apocalypse", "Cosmic Ghost Rider",
+                   "Immortal Hulk", "Immortal Abomination", "DDHK", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter",
+                   "Sivler Centurion"]
