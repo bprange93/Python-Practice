@@ -36,8 +36,16 @@ fiveStarBestPull = ["Red Hulk", "Crossbones", "Quake", "Ghost Rider", "Hyperion"
                     "Black Widow Deadly Origin", "Tigra", "Hit-Monkey", "Guardian", "Professor X", "Apocalypse",
                     "Cosmic Ghost Rider", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter", "Sivler Centurion"]
 
+firstTimeChamp5 = ["Red Hulk", "Quake", "Archangel", "Starky Spidey", "Angela", "Black Panter OG", "Omega Red", "Wolverine Weapon X",
+                   "Venom the Duck", "Venom", "Namor", "Emma Frost", "Black Widow Claire Voyant", "Sorcerer Supreme", "Professor X",
+                   "Scarlet Witch", "Odin", "Jabari Panter", "Silver Centurion"]
+
+needDupeorSig5 = ["Crossbones", "Ghost Rider", "Hyperion", "Iceman", "Kingpin", "Magik", "Killmonger", "Star-Lord", "Corvus Glaive",
+                  "Nick Fury", "Warlock", "Silver Surfer", "Black Widow Deadly Origin", "Hit-Monkey", "Tigra", "Guardian",
+                  "Apocalypse", "Cosmic Ghost Rider", "Spider-Ham", "Stryfe"]
+
 sixStarBestPull = ["Void", "Luke Cage", "She-Hulk", "Red Hulk", "Crossbones", "Falcon", "Howard the Duck", "Iceman", "Archangel",
-                   "Vulture", "Angela", "Morningstar", "Kingpin", "Hela", "Hulk Rags", "Sabretooth", "Cap Beardo", "Colossus",
+                   "Vulture", "Angela", "Morningstar", "Kingpin", "Hulk Rags", "Sabretooth", "Cap Beardo", "Colossus",
                    "Wolverine", "Magneto", "Black Panter OG", "Killmonger", "Star-Lord", "Ghost", "Corvus Glaive", "Proxima Midnight",
                    "Wolverine Weapon X", "Omega Red", "Venom the Duck", "Symbiote Supreme", "Aegon", "Thing", "CMM", "Venom",
                    "Cull Obsidian", "Human Torch", "Nick Fury", "Havok", "Namor", "Stealthy Spidey", "Sunspot", "Warlock",
@@ -47,12 +55,29 @@ sixStarBestPull = ["Void", "Luke Cage", "She-Hulk", "Red Hulk", "Crossbones", "F
                    "Immortal Hulk", "Immortal Abomination", "DDHK", "Scarlet Witch", "Spider-Ham", "Stryfe", "Odin", "Jabari Panter",
                    "Sivler Centurion"]
 
+firstTimeChamp6 = ["She-Hulk", "Red Hulk", "Crossbones", "Iceman", "Archangel", "Vulture", "Angela", "Kingpin", "Hulk Rags",
+                   "Cap Beardo", "Wolverine", "Magneto", "Black Panter OG", "Killmonger", "Star-Lord", "Ghost", "Corvus Glaive",
+                   "Venom the Duck", "Aegon", "Thing", "Venom", "Human Torch", "Nick Fury", "Havok", "Namor", "Stealthy Spidey",
+                   "Warlock", "Emma Frost", "Black Widow Claire Voyant", "Doctor Doom", "Guillotine 2099", "Silver Surfer",
+                   "Mojo", "Mole Man", "Sorcerer Supreme", "Red Guardian", "Black Widow Deadly Origin", "Tigra", "Hit-Monkey",
+                   "Guardian", "Professor X", "Apocalypse", "Cosmic Ghost Rider", "Immortal Abomination", "Scarlet Witch",
+                   "Spider-Ham", "Stryfe", "Odin", "Jabari Panter", "Sivler Centurion"]
+
+needDupeorSig6 = ["Void", "Luke Cage", "Falcon", "Howard the Duck", "Morningstar", "Sabretooth", "Colossus", "Proxima Midnight", "Omega Red",
+                  "Symbiote Supreme", "CMM", "Cull Obsidian", "Sunspot", "Elsa Bloodstone", "Mister Fantastic", "Terrax", "Sasquatch",
+                  "Dragon Man", "Immortal Hulk", "DDHK", ]
+
+# Ask this question to determine which if statment to go into.
 starLevel = input("What star level are you spinning? ")
+
+# Once given the answer it will ask which champ to find it in the List
 champLandedOn = input("Which champion did you land on? ")
 
+# If answered with 5 then it will pull them into this if statement.
+# Asks which champ they landed on and if it is in the best pull list they will get a congrats if not better luck.
 if starLevel == "5":
     if champLandedOn in champList:
-        if(champLandedOn in fiveStarBestPull):
+        if(champLandedOn in fiveStarBestPull and firstTimeChamp5):
             print("Great pull Congrats!")
         else:
             print("Darn better luck next time!")
