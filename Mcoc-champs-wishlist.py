@@ -76,11 +76,16 @@ champLandedOn = input("Which champion did you land on? ")
 # If answered with 5 then it will pull them into this if statement.
 # Asks which champ they landed on and if it is in the best pull list they will get a congrats if not better luck.
 if starLevel == "5":
-    if champLandedOn in champList:
-        if(champLandedOn in fiveStarBestPull and firstTimeChamp5):
-            print("Great pull Congrats!")
-        else:
-            print("Darn better luck next time!")
+    if champLandedOn in fiveStarBestPull:
+        if(champLandedOn in firstTimeChamp5):
+            print("Great pull Congrats on that new champ you've wanted!")
+
+        elif(champLandedOn in needDupeorSig5):
+            print(
+                "Heck yeah awakened or high sig doesn't matter champs need both to be gods!")
+
+    elif champLandedOn in champList:
+        print("Darn better luck next time!")
 
 if starLevel == "6":
     if champLandedOn in champList:
