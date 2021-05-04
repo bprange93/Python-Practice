@@ -86,10 +86,17 @@ if starLevel == "5":
 
     elif champLandedOn in champList:
         print("Darn better luck next time!")
+    else:
+        print("Champion either hasn't been added or doesn't exist try again.")
 
 if starLevel == "6":
-    if champLandedOn in champList:
-        if(champLandedOn in sixStarBestPull):
-            print("Great pull Congrats!")
-        else:
-            print("Darn better luck next time!")
+    if champLandedOn in sixStarBestPull:
+        if(champLandedOn in firstTimeChamp6):
+            print("Great pull Congrats especially on a 6 star whoa!")
+        elif(champLandedOn in needDupeorSig6):
+            print(
+                "Lets get that awakening and sigs most champs become real good with it!")
+    elif champLandedOn in champList:
+        print("Woof that sucks better luck next time.")
+    else:
+        print("Champion either hasn't been added or doesn't exist try again.")
