@@ -32,6 +32,6 @@ def digital_root(n):
     return (n - 1) % 9 + 1 if n else 0
 
 
-print(digital_root(16))
+print(digital_root(10))
 print(digital_root(942))
-print(digital_root(None))
+print(digital_root(8))
