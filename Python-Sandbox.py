@@ -1,7 +1,7 @@
 import math
 
-str = "Batman"
-print(str[-1::-1])
+#str = "Batman"
+# print(str[-1::-1])
 
 
 # def narcissistic(value):
@@ -19,3 +19,19 @@ print(str[-1::-1])
 
 
 # print(narcissistic(371))
+
+def digital_root(n):
+    # First make a digit sum for the process to have a starting point = 0
+    # make a temp = n so you can bring n into the equation
+    # While temp > 9 keep going through till it isn't
+    # make a for loop so it will take the single digits and start adding them together
+    # once done set temp to the sum
+    # if temp is till over 9 go back through again
+    if(None):
+        return 0
+    return (n - 1) % 9 + 1 if n else 0
+
+
+print(digital_root(16))
+print(digital_root(942))
+print(digital_root(None))
