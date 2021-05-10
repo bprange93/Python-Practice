@@ -1,13 +1,13 @@
 import math
 
-#str = "Batman"
+# str = "Batman"
 # print(str[-1::-1])
 
 
 # def narcissistic(value):
 # split up then multiplied by exponent of digits of number
-#x = 0
-#nw = 0
+# x = 0
+# nw = 0
 # if value > 9:
 #    x = value.str.split
 #    for i = 0, i > x.length, i + 1:
@@ -32,6 +32,24 @@ def digital_root(n):
     return (n - 1) % 9 + 1 if n else 0
 
 
-print(digital_root(10))
-print(digital_root(942))
-print(digital_root(8))
+def divisors(integer):
+    # Make an array to contain the numbers
+    # Check to see if the number is divisible
+    # if is divisible then divide number and put into list
+    # if divisible by more than 1 number loop back to do it again
+    # put this into the list from smallest to largest
+    # if not divisible make it a prime number
+    listDivisors = []
+    for x in range(2, integer - 1):
+        if integer % x == 0:
+            listDivisors.append(x)
+    if len(listDivisors) == 0:
+        return str(integer) + 'is prime.'
+    else:
+        return listDivisors
+
+
+print(divisors(6))
+print(divisors(12))
+print(divisors(23))
+print(divisors(16))
