@@ -49,7 +49,12 @@ def divisors(integer):
         return listDivisors
 
 
-print(divisors(6))
-print(divisors(12))
-print(divisors(23))
-print(divisors(16))
+def friend(x):
+    # make list which returns a list
+    # returned list can only have names with exactly 4 letters
+    # if more or less than 4 letters not friend
+    # return list of friends
+    return [letters for letters in x if len(letters) == 4]
+
+
+print(friend("Lois"))
