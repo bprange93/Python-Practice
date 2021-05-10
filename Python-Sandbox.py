@@ -57,4 +57,4 @@ def friend(x):
     return [letters for letters in x if len(letters) == 4]
 
 
-print(friend("Lois"))
+print(friend(["Lois", "Tom", "Jack", "Brandon"]))
