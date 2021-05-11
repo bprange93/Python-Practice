@@ -57,8 +57,21 @@ def friend(x):
     return [letters for letters in x if len(letters) == 4]
 
 
-def myFriend(x):
+print(friend(['Jack', 'Lois', 'Percy']))
 
 
-def get_sum(a, b):
-    for numbers
+def myFriend(names):
+    friendsList = []
+
+    for words in names:
+        if len(words) == 4:
+            friendsList.append(words)
+
+    return friendsList
+
+
+print(myFriend(['Lois', 'Jack', 'Percy']))
+
+
+# def get_sum(a, b):
+# for numbers
