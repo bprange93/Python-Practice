@@ -57,9 +57,6 @@ def friend(x):
     return [letters for letters in x if len(letters) == 4]
 
 
-print(friend(['Jack', 'Lois', 'Percy']))
-
-
 def myFriend(names):
     friendsList = []
 
@@ -70,8 +67,16 @@ def myFriend(names):
     return friendsList
 
 
-print(myFriend(['Lois', 'Jack', 'Percy']))
+def get_sum(a, b):
+    # get integers between the two numbers
+    # add all the numbers together
+    total = 0
+    if a < b:
+        while a < b:
+            a + 1
+        a + b = total
+
+    return total
 
 
-# def get_sum(a, b):
-# for numbers
+print(get_sum(1, 3))
