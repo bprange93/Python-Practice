@@ -72,7 +72,9 @@ def get_sum(a, b):
     # add all the numbers together
     c = []
     total = 0
-    if a < b:
+    if a == b:
+        total = a
+    elif a < b:
         while a < b:
             # add the original number plus all numbers a turns into to c
             c.append(a)
@@ -82,8 +84,7 @@ def get_sum(a, b):
                 break
         # we want the total to be b + the sum of the numbers in c list.
         total = b + sum(c)
-
-    if a > b:
+    elif a > b:
         while a > b:
             # add the original number plus all numbers a turns into to c
             c.append(b)
@@ -99,3 +100,4 @@ def get_sum(a, b):
 
 print(get_sum(1, 3))
 print(get_sum(3, 1))
+print(get_sum(1, 1))
