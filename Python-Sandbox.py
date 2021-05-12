@@ -70,11 +70,16 @@ def myFriend(names):
 def get_sum(a, b):
     # get integers between the two numbers
     # add all the numbers together
+    c = 0
     total = 0
     if a < b:
+
         while a < b:
-            a + 1
-        a + b = total
+            c = a + 1
+            if c == b:
+                break
+
+        total = a + b + c - 1
 
     return total
 
