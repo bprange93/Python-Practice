@@ -70,16 +70,18 @@ def myFriend(names):
 def get_sum(a, b):
     # get integers between the two numbers
     # add all the numbers together
-    c = 0
+    c = []
     total = 0
     if a < b:
-
         while a < b:
-            c = a + 1
-            if c == b:
+            # add the original number plus all numbers a turns into to c
+            c.append(a)
+            a += 1
+            # once a == b we dont want that number so we break out
+            if a == b:
                 break
-
-        total = a + b + c - 1
+        # we want the total to be b + the sum of the numbers in c list.
+        total = b + sum(c)
 
     return total
 
