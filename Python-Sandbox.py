@@ -119,8 +119,11 @@ def pig_it(text):
     wordsList = []
     for words in text:
         words = str(text).split()
-        wordsList = words
-        for word in wordsList:
-            word = text[-2:] + text[2:-2] + text[:2] + "ay"
-            pigLatin = word
-    return pigLatin
+
+        for word in words:
+            word = words[-2:2] + "ay"
+            wordsList.append(word)
+    return wordsList
+
+
+print(pig_it("This code will work"))
