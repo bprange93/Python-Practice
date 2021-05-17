@@ -106,7 +106,10 @@ def descending_order(num):
     # Takes each number in num to make them individual characters
     for numbers in range(0, len(stringNum)):
         seperatedNumber.append(stringNum[numbers])
-    if min(int(seperatedNumber)) < max(int(seperatedNumber)):
+        # takes the array in and sorts it from the largest number down to the smallest
+        seperatedNumber.sort(reverse=True)
+    largestNumber = ''.join(seperatedNumber)
+    return int(largestNumber)
 
 
 print(descending_order(267813))
