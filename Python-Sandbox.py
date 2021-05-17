@@ -112,4 +112,15 @@ def descending_order(num):
     return int(largestNumber)
 
 
-print(descending_order(267813))
+def pig_it(text):
+    # get the number of characters in each word
+    # take the first 2 positions and swap them with the last 2 (-2)
+    # add ay to the end of each word after letters have been swapped
+    wordsList = []
+    for words in text:
+        words = str(text).split()
+        wordsList = words
+        for word in wordsList:
+            word = text[-2:] + text[2:-2] + text[:2] + "ay"
+            pigLatin = word
+    return pigLatin
