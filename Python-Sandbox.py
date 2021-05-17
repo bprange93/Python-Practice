@@ -98,6 +98,15 @@ def get_sum(a, b):
     return total
 
 
-print(get_sum(1, 3))
-print(get_sum(3, 1))
-print(get_sum(1, 1))
+def descending_order(num):
+    # take the number and separate each individual number into separate characters
+    # sort these numbers from highest to the lowest
+    seperatedNumber = []
+    stringNum = str(num)
+    # Takes each number in num to make them individual characters
+    for numbers in range(0, len(stringNum)):
+        seperatedNumber.append(stringNum[numbers])
+    if min(int(seperatedNumber)) < max(int(seperatedNumber)):
+
+
+print(descending_order(267813))
