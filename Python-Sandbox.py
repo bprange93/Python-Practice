@@ -118,9 +118,12 @@ def pig_it(text):
     # add ay to the end of each word after letters have been swapped
     wordsList = []
     for words in text:
+        # Watch debug tool. Splits words but starts with first letter. May be part of reason causing issues.
         words = str(text).split()
 
         for word in words:
+            # each time I try to get it to apply to each word in the list only applies to first and last word.
+            # isn't working that way with current code. Jumps over append and goes to print.
             word = words[-2:2] + "ay"
             wordsList.append(word)
     return wordsList
