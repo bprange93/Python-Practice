@@ -119,12 +119,16 @@ def pig_it(text):
     text = str(text).split(" ")
     answer = ""
     for words in text:
+        new = ""
+        # Ensures what is coming in just letters (isalpha)
         if words.isalpha():
-            new = ""
-            for word in range(1, len(words) - 1):
-                new += text[word]
-            new += text[0] + "ay"
+            for word in range(1, len(words)):
+                new += words[word]
+            new += (text[0] + "ay")
             answer += (new + " ")
+        else:
+            print("not alpha")
+            new += (" " + words)
 
     return answer
 
