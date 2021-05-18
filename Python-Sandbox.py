@@ -118,17 +118,20 @@ def pig_it(text):
     # add ay to the end of each word after letters have been swapped
     text = str(text).split(" ")
     answer = ""
+    # Loops through words
     for words in text:
         new = ""
         # Ensures what is coming in just letters (isalpha)
         if words.isalpha():
+            # follow pig latin convention
             for word in range(1, len(words)):
                 new += words[word]
             new += (text[0] + "ay")
             answer += (new + " ")
         else:
+            # takes care of code if there are numbers mixed in
             print("not alpha")
-            new += (" " + words)
+            answer += (text)
 
     return answer
 
