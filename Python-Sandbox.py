@@ -146,11 +146,12 @@ def is_pangram(s):
     # if they do return True if not return False
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
                 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    print(alphabet)
-    # if (s.__contains__(alphabet)):
-    #    return True
-    # else:
-    #    return False
+    for letters in str(s):
+        if letters.isalpha():
+            if letters.__contains__(alphabet):
+                return True
+        else:
+            return False
 
 
 print(is_pangram("The quick, brown fox jumps over the lazy dog"))
