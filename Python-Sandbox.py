@@ -1,4 +1,5 @@
 import math
+import string
 
 # str = "Batman"
 # print(str[-1::-1])
@@ -139,6 +140,17 @@ def pig_it(text):
     return answer.strip()
 
 
-print(pig_it("This code will work ?"))
-print(pig_it("I really want this to work !"))
-print(pig_it("It gone done did work"))
+def is_pangram(s):
+    # make a array containing all letters
+    # create if statement for if s contains all letters
+    # if they do return True if not return False
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+                'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    print(alphabet)
+    # if (s.__contains__(alphabet)):
+    #    return True
+    # else:
+    #    return False
+
+
+print(is_pangram("The quick, brown fox jumps over the lazy dog"))
