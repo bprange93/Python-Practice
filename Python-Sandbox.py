@@ -126,14 +126,19 @@ def pig_it(text):
             # follow pig latin convention
             for word in range(1, len(words)):
                 new += words[word]
-            new += (text[0] + "ay")
+            new += (words[0] + "ay")
             answer += (new + " ")
         else:
             # takes care of code if there are numbers mixed in
-            print("not alpha")
-            answer += (text)
+            if text[-1] == '?' or '!':
+                # gives answer correctly and takes away empty space to pass Kata
+                answer += str(text).join(' ').strip() + text[-1]
+            else:
+                answer += str(text).join(' ')
 
-    return answer
+    return answer.strip()
 
 
-print(pig_it("This code will work"))
+print(pig_it("This code will work ?"))
+print(pig_it("I really want this to work !"))
+print(pig_it("It gone done did work"))
