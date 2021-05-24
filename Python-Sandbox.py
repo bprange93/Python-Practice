@@ -168,8 +168,7 @@ def is_pangram(s):
 
 
 # Detect Pangram codewars
-print(is_pangram("The quick, brown fox jumps over the lazy dog"))
-print(is_pangram("This isn't a pangram!"))
+# come back to fix potential problems (for fun) (if letters aren't all there but over 26 letters present)
 
 
 def last_survivor(letters, coords):
@@ -181,3 +180,9 @@ def last_survivor(letters, coords):
     for pos in coords:
         new_letters.pop(pos)
     return ''.join(new_letters)
+
+
+def to_camel_case(text):
+    # seperate each word in text into its own string
+    # once put into an array use capitalize method to capitalize the first letter in each word
+    #
