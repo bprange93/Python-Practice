@@ -185,4 +185,18 @@ def last_survivor(letters, coords):
 def to_camel_case(text):
     # seperate each word in text into its own string
     # once put into an array use capitalize method to capitalize the first letter in each word
-    #
+    if "_" in text:
+        text = str(text).split("_")
+    if "-" in text:
+        text = str(text).split("-")
+    answer = ""
+    for word in text:
+        if "T" in text:
+            answer += word.title()
+        elif "t" in text:
+
+        answer += word.title()
+    return answer
+
+
+print(to_camel_case("the_stealth_warrior"))
