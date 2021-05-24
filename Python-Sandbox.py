@@ -151,15 +151,25 @@ def is_pangram(s):
     # if they do return True if not return False
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
                 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    for letters in str(s):
-        if letters.isalpha():
-            if letters.__contains__(alphabet):
-                return True
-        else:
-            return False
+    counter = 0
+    s = str(s).split(" ")
+    for words in s:
+        for letters in words:
+            if letters.isalpha():
+                if letters.lower() in alphabet:
+                    counter += 1
+                    continue
+            elif letters == ',' or '!' or '?':
+                continue
+    if counter >= 26:
+        return True
+    else:
+        return False
+
 
 # Detect Pangram codewars
-#print(is_pangram("The quick, brown fox jumps over the lazy dog"))
+print(is_pangram("The quick, brown fox jumps over the lazy dog"))
+print(is_pangram("This isn't a pangram!"))
 
 
 def last_survivor(letters, coords):
