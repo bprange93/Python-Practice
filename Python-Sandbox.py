@@ -195,7 +195,13 @@ def to_camel_case(text):
 
     answer = ""
     for word in text:
-        answer += word.title()
+        words = []
+        if word == text[0]:
+            words.append(word)
+        elif word > text[0]:
+            words.append(word.title())
+    answer += str(words).join('')
+
     return answer
 
 
