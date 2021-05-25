@@ -187,23 +187,21 @@ def to_camel_case(text):
     # once put into an array use capitalize method to capitalize the first letter in each word
     if "_" and "-" in text:
         text = str(text).split("_") + str(text).split("-")
-    if "_" or "-" in text:
-        if "_" in text:
-            text = str(text).split("_")
-        if "_" in text:
-            text = str(text).split("-")
-
+    elif "-" in text:
+        text = str(text).split("-")
+    else:
+        text = str(text).split("_")
     answer = ""
+    words = []
     for word in text:
-        words = []
         if word == text[0]:
             words.append(word)
-        elif word > text[0]:
+        else:
             words.append(word.title())
-    answer += str(words).join('')
-
+    answer += str(words).join(' ')
     return answer
 
 
 print(to_camel_case("the_stealth_warrior"))
 print(to_camel_case("The-Stealth-Warrior"))
+print(to_camel_case("the-stealth_Warrior"))
