@@ -185,19 +185,26 @@ def last_survivor(letters, coords):
 def to_camel_case(text):
     # seperate each word in text into its own string
     # once put into an array use capitalize method to capitalize the first letter in each word
+    # work if statement this way in order to have the method only look for one character at a time
     if "_" and "-" in text:
         text = str(text).split("_") + str(text).split("-")
     elif "-" in text:
         text = str(text).split("-")
     else:
         text = str(text).split("_")
+    # created variables in order to hold the string and in order to seperate the words from one aother
+    # in the order they are in while keeping the first word exactly how it is input.
     answer = ""
     words = []
+    # for loops through the text by each word.
+    # if it is the first word it is suppose to append it
+    # else if its not it will append a capitalized version of it
     for word in text:
         if word == text[0]:
             words.append(word)
         else:
             words.append(word.title())
+    # suppose to display the words as a string but still displaying in an array
     answer += str(words).join(' ')
     return answer
 
