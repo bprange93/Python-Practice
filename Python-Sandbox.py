@@ -186,12 +186,14 @@ def to_camel_case(text):
     # seperate each word in text into its own string
     # once put into an array use capitalize method to capitalize the first letter in each word
     # work if statement this way in order to have the method only look for one character at a time
-    if "_" and "-" in text:
-        text = str(text).split("_") + str(text).split("-")
-    elif "-" in text:
-        text = str(text).split("-")
-    else:
-        text = str(text).split("_")
+    # if "_" and "-" in text:
+    #     text = str(text).split("_") + str(text).split("-")
+    # elif "-" in text:
+    #     text = str(text).split("-")
+    # else:
+    #     text = str(text).split("_")
+    text = str(text).replace('_', ' ').replace('-', ' ').split()
+
     # created variables in order to hold the string and in order to seperate the words from one aother
     # in the order they are in while keeping the first word exactly how it is input.
     answer = ""
