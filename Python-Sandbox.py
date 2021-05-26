@@ -210,6 +210,21 @@ def to_camel_case(text):
     return (answer.join(words))
 
 
-print(to_camel_case("the_stealth_warrior"))
-print(to_camel_case("The-Stealth-Warrior"))
-print(to_camel_case("the-stealth_Warrior"))
+def zeros(n):
+    # set a int to 1
+    # make a for loop from 1 - n
+    # multiply the int by itself + 1 add 1 to int and loop back through again till reaches value n
+    # set new int to hold the value being multiplied
+    # return the value multiplied when you finally reach the value of n
+    start = 1
+    answer = []
+    total = 0
+    while start <= n:
+        answer.append(start)
+        start += 1
+    for i in answer:
+        total += i * answer[i + 1]
+    return total
+
+
+print(zeros(3))
