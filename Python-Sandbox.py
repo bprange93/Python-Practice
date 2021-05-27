@@ -223,7 +223,12 @@ def zeros(n):
         answer.append(start)
         start += 1
     for i in answer:
-        total += i * answer[i + 1]
+        if i == answer:
+            total += i * i
+            break
+        elif i > answer:
+            total += i * answer[i]
+
     return total
 
 
