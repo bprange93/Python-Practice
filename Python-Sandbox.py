@@ -219,17 +219,20 @@ def zeros(n):
     start = 1
     answer = []
     total = 0
+    # This will set up the array in order to get all the numbers that need to be multiplied.
     while start <= n:
         answer.append(start)
         start += 1
+    # once the array is set we will loop through to start multiplying and setting the number each time through
+    # Once i == answer then that means it will multiply by the last number setting total to what it should be.
     for i in answer:
         if i == answer:
-            total += i * i
+            total += i * total[i - 2]
             break
-        elif i > answer:
+        elif i <= answer[i]:
             total += i * answer[i]
 
     return total
 
 
-print(zeros(3))
+print(zeros(6))
