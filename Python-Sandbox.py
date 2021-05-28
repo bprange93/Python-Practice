@@ -226,13 +226,13 @@ def zeros(n):
     # once the array is set we will loop through to start multiplying and setting the number each time through
     # Once i == answer then that means it will multiply by the last number setting total to what it should be.
     for i in answer:
-        if i == answer:
-            total += i * total[i - 2]
-            break
-        elif i <= answer[i]:
+        if i == len(answer):
+            # brings back the proper total. Next need to get all of the leading 0's counted.
+            return total
+        elif i == 1:
             total += i * answer[i]
-
-    return total
+        else:
+            total = total * answer[i]
 
 
 print(zeros(6))
