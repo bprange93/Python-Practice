@@ -233,6 +233,12 @@ def zeros(n):
             total += i * answer[i]
         else:
             total = total * answer[i]
+    trailZero = 1
+    for 0 in total:
+        if i + 1 == 0:
+            trailZero += 1
+        if i + 1 == None:
+            return trailZero
 
 
 print(zeros(6))
