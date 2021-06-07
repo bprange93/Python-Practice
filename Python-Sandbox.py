@@ -233,7 +233,9 @@ def zeros(n):
             total += i * answer[i]
         else:
             total = total * answer[i]
+    # set to 1 because I want it to count the 0 that already is there.
     trailZero = 1
+    # pulling out where a 0 is and if the next number is a 0 add if not display trailZero.
     for 0 in total:
         if i + 1 == 0:
             trailZero += 1
