@@ -152,6 +152,7 @@ def is_pangram(s):
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
                 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     counter = 0
+    # this takes away any open space between the letters
     s = str(s).split(" ")
     for words in s:
         for letters in words:
