@@ -237,11 +237,30 @@ def zeros(n):
     # set to 1 because I want it to count the 0 that already is there.
     trailZero = 1
     # pulling out where a 0 is and if the next number is a 0 add if not display trailZero.
-    for 0 in total:
-        if i + 1 == 0:
-            trailZero += 1
-        if i + 1 == None:
-            return trailZero
+    # for 0 in total:
+    #     if i + 1 == 0:
+    #         trailZero += 1
+    #     if i + 1 == None:
+    #         return trailZero
 
 
-print(zeros(6))
+def solution(n):
+    # set roman numeral values
+    # once set make sure to set in order of if less than 5 or more which to use
+    # set symbol as answer after done appending
+    # make counter for how many numbers in int
+    symbols = ['I', 'IV', 'V', 'IX', 'X', 'XL',
+               'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
+    numbers = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+    i = 12
+    output = ''
+    while n != 0:
+        if numbers[i] <= n:
+            output += symbols[i]
+            n = n - numbers[i]
+        else:
+            i -= 1
+    return output
+
+
+print(solution(4))
