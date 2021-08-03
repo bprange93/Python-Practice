@@ -263,4 +263,28 @@ def solution(n):
     return output
 
 
-print(solution(4))
+def one():
+
+
+def two():
+
+
+def three():
+
+
+def four():
+
+
+def five():
+
+
+def six():
+
+
+def seven():
+
+
+def eight():
+
+
+def nine():
