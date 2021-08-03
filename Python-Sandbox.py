@@ -263,6 +263,14 @@ def solution(n):
     return output
 
 
+def numbers():
+    numberValue = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    numberWord = ['one', 'two', 'three', 'four',
+                  'five', 'six', 'seven', 'eight', 'nine']
+    for number in numberWord:
+        numberValue[number] = numberWord[number]
+
+
 def one():
 
 
