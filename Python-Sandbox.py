@@ -271,7 +271,8 @@ def solution(n):
 #         numberValue[number] = numberWord[number]
 
 
-def one():
+def one(value):
+    value = function
     return 1
 
 
@@ -307,4 +308,10 @@ def nine():
     return 9
 
 
-print(one())
+def plus(number):
+    number = function
+    answer = number + function
+    return answer
+
+
+print(one(plus(two)))
