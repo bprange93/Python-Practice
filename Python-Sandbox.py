@@ -270,48 +270,74 @@ def solution(n):
 #     for number in numberWord:
 #         numberValue[number] = numberWord[number]
 
-
+# use value to bring in the prior function.
+# if its the first function then it will pass if none
 def one(value):
-    value = function
+    value()
+    if value is None:
+        pass
     return 1
 
 
-def two():
+def two(value):
+    value()
+    if value is None:
+        pass
     return 2
 
 
-def three():
+def three(value):
+    value()
+    if value is None:
+        pass
     return 3
 
 
-def four():
+def four(value):
+    value()
+    if value is None:
+        pass
     return 4
 
 
-def five():
+def five(value):
+    value()
+    if value is None:
+        pass
     return 5
 
 
-def six():
+def six(value):
+    value()
+    if value is None:
+        pass
     return 6
 
 
-def seven():
+def seven(value):
+    value()
+    if value is None:
+        pass
     return 7
 
 
-def eight():
+def eight(value):
+    value()
+    if value is None:
+        pass
     return 8
 
 
-def nine():
+def nine(value):
+    value()
+    if value is None:
+        pass
     return 9
 
 
-def plus(number):
-    number = function
-    answer = number + function
+def plus(number, value):
+    answer = number() + value()
     return answer
 
 
-print(one(plus(two)))
+print(one(plus(two())))
