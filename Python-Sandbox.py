@@ -320,7 +320,10 @@ def times(b):
 
 
 def divide_by(b):
-    return lambda a: a/b
+    return lambda a: round(a/b)
 
 
-print(one(plus(two())))
+print(nine(plus(four())))
+print(seven(times(five())))
+print(eight(minus(three())))
+print(six(divide_by(two())))
