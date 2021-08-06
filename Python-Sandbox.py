@@ -264,68 +264,63 @@ def solution(n):
 
 
 # since f is getting set to none the if statement will be triggered making f = 1 to pass into the plus function.
+# rinsed and repeated for following numbers and added 0
+def zero(f=None):
+    return 0 if not f else f(0)
+
+
 def one(f=None):
     return 1 if not f else f(1)
 
 
-def two(value):
-    value()
-    if value is None:
-        pass
-    return 2
+def two(f=None):
+    return 2 if not f else f(2)
 
 
-def three(value):
-    value()
-    if value is None:
-        pass
-    return 3
+def three(f=None):
+    return 3 if not f else f(3)
 
 
-def four(value):
-    value()
-    if value is None:
-        pass
-    return 4
+def four(f=None):
+    return 4 if not f else f(4)
 
 
-def five(value):
-    value()
-    if value is None:
-        pass
-    return 5
+def five(f=None):
+    return 5 if not f else f(5)
 
 
-def six(value):
-    value()
-    if value is None:
-        pass
-    return 6
+def six(f=None):
+    return 6 if not f else f(6)
 
 
-def seven(value):
-    value()
-    if value is None:
-        pass
-    return 7
+def seven(f=None):
+    return 7 if not f else f(7)
 
 
-def eight(value):
-    value()
-    if value is None:
-        pass
-    return 8
+def eight(f=None):
+    return 8 if not f else f(8)
 
 
-def nine(value):
-    value()
-    if value is None:
-        pass
-    return 9
+def nine(f=None):
+    return 9 if not f else f(9)
+
+# using lambda to bring in a from the function that is prior to the plus function
 
 
-def plus(number):
-    return number + value
+def plus(b):
+    return lambda a: a+b
+
+
+def minus(b):
+    return lambda a: a-b
+
+
+def times(b):
+    return lambda a: a*b
+
+
+def divide_by(b):
+    return lambda a: a/b
 
 
 print(one(plus(two())))
