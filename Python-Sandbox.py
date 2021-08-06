@@ -263,20 +263,9 @@ def solution(n):
     return output
 
 
-# def numbers():
-#     numberValue = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-#     numberWord = ['one', 'two', 'three', 'four',
-#                   'five', 'six', 'seven', 'eight', 'nine']
-#     for number in numberWord:
-#         numberValue[number] = numberWord[number]
-
-# use value to bring in the prior function.
-# if its the first function then it will pass if none
-def one(value):
-    value()
-    if value is None:
-        pass
-    return 1
+# since f is getting set to none the if statement will be triggered making f = 1 to pass into the plus function.
+def one(f=None):
+    return 1 if not f else f(1)
 
 
 def two(value):
@@ -335,9 +324,8 @@ def nine(value):
     return 9
 
 
-def plus(number, value):
-    answer = number() + value()
-    return answer
+def plus(number):
+    return number + value
 
 
 print(one(plus(two())))
