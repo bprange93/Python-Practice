@@ -318,9 +318,11 @@ def minus(b):
 def times(b):
     return lambda a: a*b
 
+# found that // returns the nearest digit alone no decimals. look into how this works
+
 
 def divide_by(b):
-    return lambda a: round(a/b)
+    return lambda a: a//b
 
 
 print(nine(plus(four())))
