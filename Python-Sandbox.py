@@ -339,17 +339,22 @@ def even_and_odd(n):
     # for loop should take in the numbers individually as a string
     for numbers in stringNum:
         number.append(numbers)
+    # all numbers are being brought into NE even if the number doesn't equal
     for a in number:
-        if int(a) / 2:
+        if int(a) == 0:
+            pass
+        elif int(a) % 2 == 0:
             NE.append(a)
         else:
             NO.append(a)
-    # if odd contains nothing it will be equal and return 0
-    if NO == None:
-        NO = 0
 
-    answer = [NE, NO]
+    # if odd contains nothing it will be equal and return 0
+    if NO.__contains__(None):
+        NO.append(0)
+
+    answer = (int(''.join(NE)), int(''.join(NO)))
     return answer
 
 
-print(even_and_odd(126453))
+# print(even_and_odd(126453))
+print(even_and_odd(2046))
