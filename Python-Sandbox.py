@@ -332,4 +332,15 @@ def even_and_odd(n):
     # if numbers = 0,2,4,6,8 append to NE
     NE = []
     NO = []
+    odd = (1, 3, 5, 7, 9)
+    even = (2, 4, 6, 8)
     for numbers in n:
+        if numbers == odd:
+            NO.append(n)
+        elif numbers == even:
+            NE.append(n)
+        else:
+            pass
+    if NO == None:
+        NO = 0
+    return NO and NE
