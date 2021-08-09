@@ -333,22 +333,23 @@ def even_and_odd(n):
     # have to turn n into a string to be split
     NE = []
     NO = []
-    odd = ('1', '3', '5', '7', '9')
-    even = ('2', '4', '6', '8')
+    number = []
     stringNum = str(n)
-    # for loop should take in the numbers individually and start setting them in either NO for odd or NE for even
-    for numbers in range(0, len(stringNum)):
-        if numbers == odd:
-            NO.append(n)
-        elif numbers == even:
-            NE.append(n)
-        # once done it will pass
+
+    # for loop should take in the numbers individually as a string
+    for numbers in stringNum:
+        number.append(numbers)
+    for a in number:
+        if int(a) / 2:
+            NE.append(a)
         else:
-            pass
+            NO.append(a)
     # if odd contains nothing it will be equal and return 0
     if NO == None:
         NO = 0
-    return int(NO and NE)
+
+    answer = [NE, NO]
+    return answer
 
 
 print(even_and_odd(126453))
