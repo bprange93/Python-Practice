@@ -330,12 +330,14 @@ def even_and_odd(n):
     # use for loop to split n into single digits
     # if numbers = 1,3,5,7,9 append to NO
     # if numbers = 0,2,4,6,8 append to NE
+    # have to turn n into a string to be split
     NE = []
     NO = []
-    odd = (1, 3, 5, 7, 9)
-    even = (2, 4, 6, 8)
+    odd = ('1', '3', '5', '7', '9')
+    even = ('2', '4', '6', '8')
+    stringNum = str(n)
     # for loop should take in the numbers individually and start setting them in either NO for odd or NE for even
-    for numbers in n:
+    for numbers in range(0, len(stringNum)):
         if numbers == odd:
             NO.append(n)
         elif numbers == even:
@@ -346,4 +348,7 @@ def even_and_odd(n):
     # if odd contains nothing it will be equal and return 0
     if NO == None:
         NO = 0
-    return NO and NE
+    return int(NO and NE)
+
+
+print(even_and_odd(126453))
