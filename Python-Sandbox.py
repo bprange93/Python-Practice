@@ -325,7 +325,11 @@ def divide_by(b):
     return lambda a: a//b
 
 
-print(nine(plus(four())))
-print(seven(times(five())))
-print(eight(minus(three())))
-print(six(divide_by(two())))
+def even_and_odd(n):
+    # create arrays to hold numbers whether they be even or odd
+    # use for loop to split n into single digits
+    # if numbers = 1,3,5,7,9 append to NO
+    # if numbers = 0,2,4,6,8 append to NE
+    NE = []
+    NO = []
+    for numbers in n:
