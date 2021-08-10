@@ -360,5 +360,5 @@ def even_and_odd(n):
     return values
 
 
-# print(even_and_odd(126453))
-print(even_and_odd(2046))
+def typist(s):
+    count = 0
